@@ -1,8 +1,8 @@
-/* Fonts import */
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* defaul styles */
-*  {
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,12 +15,13 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato', sans-serif ;
+    font-family: 'Lato', sans-serif;
 }
 
+/* Header */
 header {
     background-color: #ffffff;
-    padding: 0 1 rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -35,29 +36,29 @@ header a {
     color: inherit;
 }
 
-h1{
+h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
 
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu > li{
+#menu > li {
     margin-bottom: 1em;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles with drop-down toggle */
-nav{
+/* Navbar styles with dropdown toggle */
+nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -68,25 +69,28 @@ nav{
     top: 100%;
 }
 
-/* nav-toggle */
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
 
-#nav-toggle{
+#nav-toggle {
     display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
     font-size: 2rem;
 }
 
-main{
-    background-color: blue;
+/* Main content */
+main {
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-footer{
-    background-color: purple;
+/* Footer */
+footer {
+    background-color: orange;
 }
